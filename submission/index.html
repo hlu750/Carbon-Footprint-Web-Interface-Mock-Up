@@ -1,0 +1,213 @@
+<!--
+    Carbon Easy! (CE) web application.
+    Implemented by Helen Lu.
+-->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Carbon Easy!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Importing the JavaScript file and stylesheet. -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+</style>
+<!-- Importing JavaScript functions from js file. -->
+<script src="script.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar custom-background-colour w3-text-white w3-card w3-large w3-padding">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-larger"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-hover-opacity w3-xlarge"><i class="fa fa-leaf w3-margin-right w3-xlarge"></i><b>Carbon Easy!</b></a>
+    <div class="w3-right w3-hide-small">
+      <a href="#home" style="font-weight: bold;" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+      <a href="#about" style="font-weight: bold;" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+      <a href="#faq" style="font-weight: bold;" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">FAQ</a>
+      <a href="#contact" style="font-weight: bold;" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+      <a href="#login" style="font-weight: bold;" class="w3-bar-item w3-button w3-padding-large w3-margin-right w3-border custom-hover-colour w3-margin-left" style="border: 1pt #c7ff6d;">Login</a>
+      <a href="#register" style="font-weight: bold;" id="trigger-modal" onclick="register()" class="w3-bar-item w3-button w3-padding-large custom-complementary-background-colour2 custom-hover-colour">Register</a>
+      <a href="#" class="w3-bar-item w3-padding-large w3-margin-left w3-right w3-hover-opacity"><i class="fa fa-search"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+
+<header class="w3-display-container w3-content w3-wide" style="max-width:1920px;" id="home">
+  <div class="w3-display-container">
+    <img src="supporting-image-3.png" alt="Plant" style="width:100%"/>
+    <div class="w3-display-middle w3-margin-top w3-center" style="width:55%">
+      <p class="w3-xlarge w3-text-white w3-center" style="font-weight: bold;">Calculate your</p>
+      <!-- <h1 class="w3-margin w3-text-white title w3-center">CARBON FOOTPRINT</h1> -->
+      <h1 class="w3-margin w3-text-white title">CARBON FOOTPRINT</h1>
+      <p style="font-weight: bold;" class="w3-xlarge w3-text-white w3-margin-bottom w3-center">Help us save our planet - Calculate your environmental impact and discover actionable steps to reduce your carbon emissions, contributing to a sustainable future.</p>
+      <button href="#register" style="font-weight: bold;" id="trigger-modal" onclick="register()" class="w3-button w3-padding-large w3-xlarge w3-margin-top custom-complementary-background-colour2 custom-hover-colour">Register Now</button>
+    </div> 
+    <div class="w3-padding w3-hover-opacity w3-display-bottomright"><i class="fa fa-info-circle w3-xxlarge w3-text-white"></i></div>
+  </div>
+</header>
+
+<!-- Latest News -->
+
+<!-- 1st Grid -->
+<div class="w3-display-container w3-row-padding w3-padding-64 w3-container w3-white">
+  <div class="w3-margin-left">
+    <h1 style="margin-left:90px; font-weight: bold;">Latest News</h1>
+  </div>
+  <div class="w3-margin">
+      <i class="fa fa-angle-left w3-padding w3-hover-opacity w3-display-left w3-xxlarge w3-text-white custom-background-colour"></i>
+      <div class="row">
+        <div class="column w3-hover-opacity" style="margin-left:50px;">
+          <img alt="Article" src="news1.png" style="max-width:380px;">
+          <p class="w3-margin-top"  font-size: 16px;>May 8th 2023</p>
+          <p class="w3-xlarge" style="width: 380px; font-weight: bold;">Local Business Leads the Way in Carbon Neutrality</p>
+          <p class="w3-margin-top" style="width: 380px; font-size: 16px;">
+            A local business has successfully achieved carbon neutrality, demonstrating that sustainable practices can be both environmentally responsible and economically viable. Learn about their innovative strategies and gain . . .
+        </p>
+        </div>
+        <div class="column w3-hover-opacity">
+          <img alt="Article" src="news4.png" style="max-width:380px;">
+          <p class="w3-margin-top"  font-size: 16px;>October 5th 2022</p>
+          <p class="w3-xlarge" style="width: 380px; font-weight: bold;">Youth-led Campaign Sparks Climate Action Momentum</p>
+          <p class="w3-margin-top" style="width: 380px; font-size: 16px;">
+            Driven by the urgency of the climate crisis, a passionate youth-led campaign is making waves worldwide, igniting a powerful movement for climate action. Discover the inspiring stories and initiatives led by young activists . . .
+        </div>
+        <div class="column w3-hover-opacity">
+          <img alt="Article" src="news3.jpg" style="max-width:380px;">
+          <p class="w3-margin-top"  font-size: 16px;>June 5th 2022</p>
+          <p class="w3-xlarge" style="width: 380px; font-weight: bold;">World Environment Day 2022: Uniting for a Sustainable Planet</p>
+          <p class="w3-margin-top"style="width: 380px; font-size: 16px;">
+            World Environment Day, celebrated annually on June 5th, brings people together from all corners of the globe to raise awareness and take action for a sustainable future. Join the global movement as communities, organiza . . .
+        </div>
+        <div class="column w3-hover-opacity">
+          <img alt="Article" src="news5.png" style="max-width:380px;">
+          <p class="w3-margin-top" font-size: 16px;>April 30th 2022</p>
+          <p class="w3-xlarge" style="width: 380px; font-weight: bold;">Shifting Towards Sustainable and Responsible Choices</p>
+          <p class="w3-margin-top" style="width: 380px; font-size: 16px;">
+            As the world grapples with the environmental impact of excessive consumption, a growing movement is reshaping our approach to how we consume. Explore the inspiring stories of individuals and businesses embracing . . .
+        </div>
+      </div>
+      <i class="fa fa-angle-right w3-padding w3-hover-opacity w3-display-right w3-xxlarge w3-text-white custom-background-colour"></i>
+  </div>
+</div>
+
+
+<!-- Second Grid -->
+<div class="w3-padding-64 custom-complementary-background-colour" id="about">
+  <div class="w3-row-padding w3-padding-64 w3-container custom-complementary-background-colour">
+    <div class="w3-quarter w3-container w3-center ">
+      <div style="margin-left: 180px; margin-top: 70px;">
+        <h3 style="padding: 50px">Who We Are</h3>
+        <h3 style="padding: 50px">What We Do</h3>
+        <h3 style="padding: 50px">Our Mission</h3>
+      </div>
+    </div>
+    <div class="w3-half">
+      <h1 style="padding-bottom: 25px; padding-left: 5px">About Us</h1>
+      <h5>
+        <p style="padding: 5px">At Carbon Easy!, we are passionate about promoting sustainability and empowering individuals and organizations to make a positive impact on the environment. With a team of dedicated experts, we have created a user-friendly Carbon Footprint Calculator that enables users to measure their carbon emissions accurately.</p>
+        <hr class="rounded w3-black" style="border-top: 1px solid #000000;">
+        <p style="padding: 5px">Our goal is to raise awareness about the importance of reducing carbon footprints and provide practical solutions to help individuals and businesses transition to more sustainable practices. Through our comprehensive platform, we offer valuable insights, personalized reports, and a wealth of resources to guide users towards eco-friendly choices and actions.</p>
+        <hr class="rounded w3-black" style="border-top: 1px solid #000000;">
+        <p style="padding: 5px">We believe that every small step counts, and by collectively making conscious decisions, we can make a significant difference in combating climate change. Join us on this transformative journey and contribute to building a greener, more sustainable future for generations to come. Together, let's make a positive impact on the planet.</p>
+      </h5>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-recycle w3-padding-64 custom-colour" style="font-size:250px; margin-top: 100px; margin-left: 40px;"></i>
+    </div>
+  </div>
+</div>
+
+<!-- form -->
+
+<div id="register" class="w3-modal" style="z-index:4">
+  <div id="form-ct" class="container1 w3-modal-content w3-animate-zoom w3-margin-bottom" style="max-width: 1000px;">
+    <div class="w3-container w3-padding custom-background-colour w3-text-white">
+      <span onclick="document.getElementById('register').style.display='none'"
+      class="w3-button w3-text-white w3-right w3-xxlarge hover-custom-colour2"><i class="fa fa-remove"></i></span>
+     <h2 class="w3-center">Registration Form</h2>
+    </div>
+    <form action="#" class="form">
+      
+      <div id="userInfo">
+        <div><br></br><label class="w3-xlarge">User Details</label></div>
+        <div class="input-box">
+          <label>Given Name</label>
+          <input type="text" placeholder="Enter given name" required />
+        </div>
+        <div class="input-box">
+          <label>Surname</label>
+          <input type="text" placeholder="Enter surname" required />
+        </div>
+  
+        <div class="input-box">
+          <label>Username</label>
+          <input type="text" placeholder="Enter username" required />
+        </div>
+  
+        <div class="input-box">
+          <label>Password</label>
+          <input type="text" placeholder="Enter password" required />
+        </div>
+      </div>
+
+      
+
+      <div id="addressInfo" class="w3-margin-top">
+        <div><br></br><label class="w3-xlarge">Addresses</label></div>
+
+        <div class="input-box address">
+          <label>Home Address</label>
+          <input type="text" placeholder="Enter home address" required />
+        </div>
+        <div class="input-box address">
+          <label>Work Address</label>
+          <input type="text" placeholder="Enter work address" required />
+        </div>
+      </div>
+
+      <div id="contactInfo" class="w3-margin-top">
+        <div><br></br><label class="w3-xlarge">Contacts</label></div>
+
+        <div class="input-box">
+          <label>Mobile Number</label>
+          <input type="number" placeholder="Enter mobile number" required />
+        </div>
+        <div class="input-box">
+          <label>Email</label>
+          <input type="text" placeholder="Enter email" required />
+        </div>
+      </div>
+
+      <div>
+        <button class="hover-custom-colour3" style="margin-top: 60px; margin-bottom: 40px;"><h3>Submit</h3></button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="custom-colour-darker w3-padding-64">
+  <p class="w3-large"> Connect with us:</p>
+  <div class="w3-section w3-text-white w3-xxlarge w3-margin-left">
+    <i class="fa fa-facebook-official w3-hover-opacity w3-margin"></i>
+    <i class="fa fa-instagram w3-hover-opacity w3-margin"></i>
+    <i class="fa fa-snapchat w3-hover-opacity w3-margin"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity w3-margin"></i>
+    <i class="fa fa-twitter w3-hover-opacity w3-margin"></i>
+    <i class="fa fa-linkedin w3-hover-opacity w3-margin"></i>
+  </div>
+</footer>
+
+</body>
+</html>
